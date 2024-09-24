@@ -45,7 +45,7 @@ export default function Kelas() {
     useEffect(() => {
         const fetchSession = async () => {
             try {
-                const response = await fetch('https://sijo.vercel.app/api/auth/session');
+                const response = await fetch('https://siijo.vercel.app/api/auth/session');
                 const data = await response.json();
                 const userEmail = data.user.email
 

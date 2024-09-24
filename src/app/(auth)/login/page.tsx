@@ -39,7 +39,7 @@ export default function Login() {
 
     const fetchUserRole = async () => {
         try {
-            const response = await fetch('https://sijo.vercel.app/api/auth/session', {
+            const response = await fetch('https://siijo.vercel.app/api/auth/session', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
