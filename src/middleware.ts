@@ -16,7 +16,7 @@ export async function middleware(request: NextRequest) {
         if (token.role === 1 && !url.pathname.startsWith('/admin')) {
             return NextResponse.redirect(new URL('/admin', request.url));
         } else if (token.role === 0 && !url.pathname.startsWith('/login')) {
-            return NextResponse.redirect(new URL('/', request.url));
+            return NextResponse.redirect(new URL('/home', request.url));
         }
     } else {
         // Redirect unauthenticated users to login page if not accessing public routes

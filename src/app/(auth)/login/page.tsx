@@ -39,7 +39,7 @@ export default function Login() {
 
     const fetchUserRole = async () => {
         try {
-            const response = await fetch('https://sijo.vercel.app/sijo/api/auth/session', {
+            const response = await fetch('https://sijo.vercel.app/api/auth/session', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ export default function Login() {
                 push('/admin')
                 break
             case 0:
-                push('/')
+                push('/home')
                 break
             // default:
             //     push('/')

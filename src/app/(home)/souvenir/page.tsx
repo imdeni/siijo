@@ -77,7 +77,7 @@ export default function Admin() {
       const fetchSession = async () => {
         try {
           // Fetch the session data from your API endpoint
-          const response = await fetch('https://sijo.vercel.app/sijo/api/auth/session');
+          const response = await fetch('https://sijo.vercel.app/api/auth/session');
           const data = await response.json();
           const userEmail=data.user.email
           
