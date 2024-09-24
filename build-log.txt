@@ -1,0 +1,67 @@
+
+> crm-next@0.1.0 build
+> next build
+
+   ▲ Next.js 14.1.2
+   - Environments: .env
+
+   Creating an optimized production build ...
+(node:3252) [DEP_WEBPACK_MODULE_UPDATE_HASH] DeprecationWarning: Module.updateHash: Use new ChunkGraph API
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ✓ Compiled successfully
+   Skipping validation of types
+   Linting ...
+
+./src/app/(home)/feedback/page.tsx
+24:8  Warning: React Hook React.useEffect has a missing dependency: 'getActiveClass'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+30:8  Warning: React Hook React.useEffect has a missing dependency: 'getRating'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/(home)/kelas/page-old.tsx
+19:8  Warning: React Hook React.useEffect has a missing dependency: 'getClass'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/(home)/kelas/page.tsx
+23:8  Warning: React Hook React.useEffect has a missing dependency: 'getClass'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/(home)/kelas/[code]/page.tsx
+20:8  Warning: React Hook React.useEffect has a missing dependency: 'getHistoryClass'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/(home)/page.tsx
+19:8  Warning: React Hook React.useEffect has a missing dependency: 'getActiveClass'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/(home)/souvenir/page.tsx
+48:6  Warning: React Hook useEffect has a missing dependency: 'handleSubmit'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/components/pages/profil/card-profile/page.tsx
+21:8  Warning: React Hook React.useEffect has a missing dependency: 'session?.user?.avatar'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/14) ...
+   Generating static pages (3/14) 
+TypeError: R.extend is not a function
+    at 45839 (C:\xampp\htdocs\nanda\sijo\.next\server\app\admin\page.js:3:6412)
+    at t (C:\xampp\htdocs\nanda\sijo\.next\server\webpack-runtime.js:1:128)
+    at F (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:94693)
+    at C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97108
+    at W._fromJSON (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97546)
+    at JSON.parse (<anonymous>)
+    at L (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:94414)
+    at t (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:100799)
+
+Error occurred prerendering page "/admin". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: R.extend is not a function
+    at 45839 (C:\xampp\htdocs\nanda\sijo\.next\server\app\admin\page.js:3:6412)
+    at t (C:\xampp\htdocs\nanda\sijo\.next\server\webpack-runtime.js:1:128)
+    at F (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:94693)
+    at C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97108
+    at W._fromJSON (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:97546)
+    at JSON.parse (<anonymous>)
+    at L (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:94414)
+    at t (C:\xampp\htdocs\nanda\sijo\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:100799)
+   Generating static pages (6/14) 
+   Generating static pages (10/14) 
+ ✓ Generating static pages (14/14) 
+
+> Export encountered errors on following paths:
+	/admin/page: /admin
