@@ -8,15 +8,15 @@ export async function middleware(request: NextRequest) {
     // If the user is authenticated
     if (token) {
         // Redirect authenticated users away from login or register pages
-        if (url.pathname.startsWith('/login') || url.pathname.startsWith('/register')) {
-            return NextResponse.redirect(new URL('/', request.url));
-        }
+        // if (url.pathname.startsWith('/login') || url.pathname.startsWith('/register')) {
+        //     return NextResponse.redirect(new URL('/', request.url));
+        // }
 
         // Role-based redirection
         if (token.role === 1 && !url.pathname.startsWith('/admin')) {
             return NextResponse.redirect(new URL('/admin', request.url));
         } else if (token.role === 0 && !url.pathname.startsWith('/login')) {
-            return NextResponse.redirect(new URL('/home', request.url));
+            return NextResponse.redirect(new URL('/', request.url));
         }
     } else {
         // Redirect unauthenticated users to login page if not accessing public routes

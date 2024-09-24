@@ -68,7 +68,7 @@ export default function Login() {
                 push('/admin')
                 break
             case 0:
-                push('/home')
+                push('/')
                 break
             // default:
             //     push('/')
